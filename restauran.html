@@ -71,12 +71,19 @@
 }
 
 section{
-  display: flex;
+  display: none;
   margin: 5%;
   width: 90%;
-  background-color: green;
-  height: 300px;
-  
+  background-color: rgba(75, 243, 75, 0.39);
+  height: 150px;
+  border-radius: 10px 10px 10px 10px;
+  shape-outside: 20px 20px 20px rgb(0, 0, 0);
+}
+label{
+  margin: 2.4%;
+}
+input{
+  margin: 2.4%;
 }
   </style>
 </head>
@@ -87,11 +94,11 @@ section{
   <div class="container-card">
     <div class="card">
         <figure>
-            <img src="..\imagenes\siberiaextremeña.jpg">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Colossos_Heide_Park_Soltau_Germany.jpg">
         </figure>
-        <div class="contenido-card">
+        <div class="contenido-card" id="card1">
             <h3>MONTAÑA RUSA</h3>
-            <button>Reservar</button>
+            <button onclick="cambioCarta()">Reservar</button>
         </div>
     </div>
     <div class="card">
@@ -100,16 +107,16 @@ section{
         </figure>
         <div class="contenido-card">
             <h3>SUPER LOOPING</h3>
-            <button>Reservar</button>
+            <button onclick="mostrarMenu()">Reservar</button>
         </div>
     </div>
     <div class="card">
         <figure>
-            <img src="..\imagenes\merchan.jpg">
+            <img src="https://www.parquedeatracciones.es/content/dam/pam/images/attractions/la-lanzadera/Lanzadera-Atraccion-Parque-de-Atracciones-de-Madrid-3.jpg">
         </figure>
         <div class="contenido-card">
             <h3>LANZADERA</h3>
-            <button>Reservar</button>
+            <button onclick="mostrarMenu()">Reservar</button>
         </div>
     </div>
     <div class="card">
@@ -118,32 +125,79 @@ section{
         </figure>
         <div class="contenido-card">
             <h3>NORIA</h3>
-            <button>Reservar</button>
+            <button onclick="mostrarMenu()">Reservar</button>
         </div>
     </div>
     <div class="card">
       <figure>
-          <img src="..\imagenes\797ab856725967.59b9bf84a6e96.gif">
+          <img src="https://s3.ppllstatics.com/elcorreo/www/multimedia/201911/16/media/cortadas/critica16-kNsF-U907116730668BH-1248x770@El%20Correo.jpg">
       </figure>
       <div class="contenido-card">
           <h3>CASA DEL TERROR</h3>
-          <button>Reservar</button>
+          <button onclick="mostrarMenu()">Reservar</button>
       </div>
   </div>
   <div class="card">
     <figure>
-        <img src="..\imagenes\797ab856725967.59b9bf84a6e96.gif">
+        <img src="https://as01.epimg.net/epik/imagenes/2016/07/01/portada/1467328438_120488_1467734322_noticia_normal.jpg">
     </figure>
     <div class="contenido-card">
         <h3>COCHES DE CHOQUE</h3>
-        <button onclick="crearMovida">Reservar</button>
+        <button onclick="mostrarMenu()">Reservar</button>
     </div>
 </div>
 </div>
-<section>
+<section id="miSeccion">
+  <label for="fecha">Fecha:</label>
+  <input type="date" id="fecha" name="fecha">
 
-</section>
+  <label for="hora">Hora:</label>
+  <select id="hora" name="hora">
+    <option value="08:00">08:00 AM</option>
+    <option value="08:10">08:10 AM</option>
+    <option value="08:20">08:20 AM</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+
+  <label for="asientos">Número de asientos de adulto:</label>
+  <select id="asientos" name="asientos">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <label for="asientos">Número de asientos de adulto:</label>
+  <select id="asientos" name="asientos">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+  </select>
+  <button>Confirmar</button>
+  <button onclick="cancelar()">Cancelar</button>
+  </section>
 <script>
+function mostrarMenu(){
+  document.getElementById("miSeccion");
+  if (miSeccion.style.display === "none"){
+    miSeccion.style.display= "block";
+  }
+  else{
+    miSeccion.style.display="block";
+  }
+}
+function cancelar(){
+  document.getElementById("muSeccion")
+  if(miSeccion.style.display=="block"){
+    miSeccion.style.display = "none";
+  }
+}
+function cambioCarta(){
+  var newcontain = document.getElementById("card1");
+  var inputfecha = document.createElement("input");
+  inputfecha.type="date";
+  card1.parentNode.replaceChild(inputfecha, card1);
+}
+
 
 </script>
 </body>
