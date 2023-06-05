@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  header{
+    text-align: center;
+  }
+    .container-card{
+	width: 100%;
+  height: auto;
+	display: flex;
+  flex-wrap:wrap;
+	max-width:fit-content;
+	margin: auto;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.card{
+	width: 25%;
+  height: 300px;
+	margin: 1%;
+	border-radius: 6px;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor:pointer;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 120px;
+  border-radius: 10px 10px 10px 10px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+
+section{
+  display: flex;
+  margin: 5%;
+  width: 90%;
+  background-color: green;
+  height: 300px;
+  
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BIENVENIDO A RASCAPIQUILANDIA</h1>
+  </header>
+  <div class="container-card">
+    <div class="card">
+        <figure>
+            <img src="..\imagenes\siberiaextremeña.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>MONTAÑA RUSA</h3>
+            <button>Reservar</button>
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="https://estaticos-cdn.prensaiberica.es/clip/f8df2ea7-a581-4ca6-a665-27debbb3bffb_source-aspect-ratio_default_0.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>SUPER LOOPING</h3>
+            <button>Reservar</button>
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="..\imagenes\merchan.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>LANZADERA</h3>
+            <button>Reservar</button>
+        </div>
+    </div>
+    <div class="card">
+        <figure>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Noria_Monumental_por_la_noche_en_Valencia_%281_de_agosto_de_2021%29.jpg">
+        </figure>
+        <div class="contenido-card">
+            <h3>NORIA</h3>
+            <button>Reservar</button>
+        </div>
+    </div>
+    <div class="card">
+      <figure>
+          <img src="..\imagenes\797ab856725967.59b9bf84a6e96.gif">
+      </figure>
+      <div class="contenido-card">
+          <h3>CASA DEL TERROR</h3>
+          <button>Reservar</button>
+      </div>
+  </div>
+  <div class="card">
+    <figure>
+        <img src="..\imagenes\797ab856725967.59b9bf84a6e96.gif">
+    </figure>
+    <div class="contenido-card">
+        <h3>COCHES DE CHOQUE</h3>
+        <button onclick="crearMovida">Reservar</button>
+    </div>
+</div>
+</div>
+<section>
+
+</section>
+<script>
+
+</script>
+</body>
+</html>
