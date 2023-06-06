@@ -9,7 +9,7 @@
   header{
     text-align: center;
   }
-    .container-card{
+  .container-card{
 	width: 100%;
   height: auto;
 	display: flex;
@@ -22,13 +22,14 @@
 }
 
 .card{
-	width: 25%;
-  height: 300px;
+	width: 28%;
+  height: 400px;
 	margin: 1%;
 	border-radius: 6px;
-	background:#fff;
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-	transition: all 400ms ease-out;
+  border: 2px solid black;
+	background:#ffffff06;
+	box-shadow: 0px 1px 10px rgba(8, 2, 194, 0.861);
+	transition: all 450ms ease-out;
 	cursor:pointer;
 }
 .card:hover{
@@ -45,7 +46,7 @@
 	text-align: center;
 }
 .card .contenido-card h3{
-	margin-bottom: 15px;
+	margin-bottom: 7%;
 	color: #7a7a7a;
 }
 .card .contenido-card p{
@@ -80,26 +81,27 @@ section{
 
 }
 label{
-  margin: 1%;
+  margin: 4%;
 }
-input{
-  margin: 1%;
-}
+
 button{
 background-color: green;
 color: white;
+margin: 5%;
 }
 
 table{
   display: none;
-  justify-content: center;
+  flex-wrap: wrap;
   width: 80%;
-  height: 150px;
+  height: auto;
   border: 1px solid black;
   background-color: blue;
   text-align: left;
-  margin-left: ;
+  margin-left:10% ;
+  color: white;
 }
+
   </style>
 </head>
 <body>
@@ -107,12 +109,51 @@ table{
     <h1>BIENVENIDO A RASCAPIQUILANDIA</h1>
   </header>
   <div class="container-card">
-    <div class="card" onclick="mostrarMenu()">
+    <div class="card" onclick="cambioCarta()">
         <figure>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Colossos_Heide_Park_Soltau_Germany.jpg">
         </figure>
-        <div class="contenido-card">
+        <div id="card1" class="contenido-card">
             <h3>MONTAÑA RUSA</h3>
+            <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha">
+          <br>
+          <label for="hora">Hora:</label>
+  <select id="hora" name="hora">
+    <option value="08:00">08:00 AM</option>
+    <option value="08:10">08:10 AM</option>
+    <option value="08:20">08:20 AM</option>
+    <option value="08:00">08:30 AM</option>
+    <option value="08:10">08:40 AM</option>
+    <option value="08:20">08:50 AM</option>
+    <option value="08:00">09:00 AM</option>
+    <option value="08:10">09:10 AM</option>
+    <option value="08:20">09:20 AM</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de adulto:</label>
+  <select id="asientos" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de niño:</label>
+  <select id="asientoskid" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <br>
+  <button>Confirmar</button> 
         </div>
     </div>
     <div class="card" onclick="mostrarMenu()">
@@ -121,6 +162,45 @@ table{
         </figure>
         <div class="contenido-card">
             <h3>SUPER LOOPING</h3>
+            <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha">
+          <br>
+          <label for="hora">Hora:</label>
+  <select id="hora" name="hora">
+    <option value="08:00">08:00 AM</option>
+    <option value="08:10">08:10 AM</option>
+    <option value="08:20">08:20 AM</option>
+    <option value="08:00">08:30 AM</option>
+    <option value="08:10">08:40 AM</option>
+    <option value="08:20">08:50 AM</option>
+    <option value="08:00">09:00 AM</option>
+    <option value="08:10">09:10 AM</option>
+    <option value="08:20">09:20 AM</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de adulto:</label>
+  <select id="asientos" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de niño:</label>
+  <select id="asientoskid" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <br>
+  <button>Confirmar</button>
         </div>
     </div>
     <div class="card" onclick="mostrarMenu()">
@@ -129,7 +209,46 @@ table{
         </figure>
         <div class="contenido-card">
             <h3>LANZADERA</h3>
-        </div>
+            <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha">
+          <br>
+          <label for="hora">Hora:</label>
+  <select id="hora" name="hora">
+    <option value="08:00">08:00 AM</option>
+    <option value="08:10">08:10 AM</option>
+    <option value="08:20">08:20 AM</option>
+    <option value="08:00">08:30 AM</option>
+    <option value="08:10">08:40 AM</option>
+    <option value="08:20">08:50 AM</option>
+    <option value="08:00">09:00 AM</option>
+    <option value="08:10">09:10 AM</option>
+    <option value="08:20">09:20 AM</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de adulto:</label>
+  <select id="asientos" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de niño:</label>
+  <select id="asientoskid" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <br>
+  <button>Confirmar</button>
+      </div>
     </div>
     <div class="card" onclick="mostrarMenu()">
         <figure>
@@ -137,7 +256,46 @@ table{
         </figure>
         <div class="contenido-card">
             <h3>NORIA</h3>
-        </div>
+            <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha">
+          <br>
+          <label for="hora">Hora:</label>
+  <select id="hora" name="hora">
+    <option value="08:00">08:00 AM</option>
+    <option value="08:10">08:10 AM</option>
+    <option value="08:20">08:20 AM</option>
+    <option value="08:00">08:30 AM</option>
+    <option value="08:10">08:40 AM</option>
+    <option value="08:20">08:50 AM</option>
+    <option value="08:00">09:00 AM</option>
+    <option value="08:10">09:10 AM</option>
+    <option value="08:20">09:20 AM</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de adulto:</label>
+  <select id="asientos" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de niño:</label>
+  <select id="asientoskid" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <br>
+  <button>Confirmar</button>
+      </div>
     </div>
     <div class="card"onclick="mostrarMenu()">
       <figure>
@@ -145,6 +303,45 @@ table{
       </figure>
       <div class="contenido-card">
           <h3>CASA DEL TERROR</h3>
+          <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha">
+          <br>
+          <label for="hora">Hora:</label>
+  <select id="hora" name="hora">
+    <option value="08:00">08:00 AM</option>
+    <option value="08:10">08:10 AM</option>
+    <option value="08:20">08:20 AM</option>
+    <option value="08:00">08:30 AM</option>
+    <option value="08:10">08:40 AM</option>
+    <option value="08:20">08:50 AM</option>
+    <option value="08:00">09:00 AM</option>
+    <option value="08:10">09:10 AM</option>
+    <option value="08:20">09:20 AM</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de adulto:</label>
+  <select id="asientos" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de niño:</label>
+  <select id="asientoskid" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <br>
+  <button>Confirmar</button>
       </div>
   </div>
   <div class="card" onclick="mostrarMenu()">
@@ -153,10 +350,50 @@ table{
     </figure>
     <div class="contenido-card">
         <h3>COCHES DE CHOQUE</h3>
+        <label for="fecha">Fecha:</label>
+          <input type="date" id="fecha" name="fecha">
+          <br>
+          <label for="hora">Hora:</label>
+  <select id="hora" name="hora">
+    <option value="08:00">08:00 AM</option>
+    <option value="08:10">08:10 AM</option>
+    <option value="08:20">08:20 AM</option>
+    <option value="08:00">08:30 AM</option>
+    <option value="08:10">08:40 AM</option>
+    <option value="08:20">08:50 AM</option>
+    <option value="08:00">09:00 AM</option>
+    <option value="08:10">09:10 AM</option>
+    <option value="08:20">09:20 AM</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de adulto:</label>
+  <select id="asientos" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <!-- Agrega más opciones según tus necesidades -->
+  </select>
+  <br>
+  <label for="asientos">Número de asientos de niño:</label>
+  <select id="asientoskid" name="asientos">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+  <br>
+  <button>Confirmar</button>
     </div>
 </div>
 </div>
 <section id="miSeccion">
+  <form id="reservaForm">
   <label for="fecha">Fecha:</label>
   <input type="date" id="fecha" name="fecha">
 
@@ -195,8 +432,9 @@ table{
   </select>
   <button onclick="mostrarReserva()">Confirmar</button>
   <button onclick="cancelar()">Cancelar</button>
+</form>
   </section>
-  <table id="tablaReservas" border="1">
+  <table id="tablaReservas" border="2">
     <tr>
       <th>Fecha</th>
       <th>Hora</th>
@@ -204,7 +442,7 @@ table{
       <th>Asientos de niño</th>
     </tr>
   </table>
-<script>
+<!-- <script>
 function mostrarMenu(){
   document.getElementById("miSeccion");
   if (miSeccion.style.display === "none"){
@@ -216,7 +454,7 @@ function mostrarMenu(){
   miSeccion.scrollIntoView({ behavior: "smooth" });
 }
 function cancelar(){
-  document.getElementById("muSeccion")
+  document.getElementById("miSeccion")
   if(miSeccion.style.display=="block"){
     miSeccion.style.display = "none";
   }
@@ -226,6 +464,7 @@ function cambioCarta(){
   var inputfecha = document.createElement("input");
   inputfecha.type="date";
   card1.parentNode.replaceChild(inputfecha, card1);
+  
 }
 document.getElementById("reservaForm").addEventListener("submit", function(event) {
               event.preventDefault(); // Evitar que se recargue la página
@@ -261,6 +500,6 @@ document.getElementById("reservaForm").addEventListener("submit", function(event
   }
   tablaReservas.scrollIntoView({ behavior: "smooth" });
 }
-</script>
+</script> -->
 </body>
 </html>
