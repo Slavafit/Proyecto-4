@@ -72,12 +72,12 @@
 
 section{
   display: none;
-  margin: 10%;
+  margin-left: 10%;
   width: 80%;
   background-color: rgba(75, 243, 75, 0.39);
-  height: 150px;
+  height: 100px;
   border-radius: 10px 10px 10px 10px;
-  shape-outside: 20px 20px 20px rgb(0, 0, 0);
+
 }
 label{
   margin: 1%;
@@ -88,6 +88,17 @@ input{
 button{
 background-color: green;
 color: white;
+}
+
+table{
+  display: none;
+  justify-content: center;
+  width: 80%;
+  height: 150px;
+  border: 1px solid black;
+  background-color: blue;
+  text-align: left;
+  margin-left: ;
 }
   </style>
 </head>
@@ -100,7 +111,7 @@ color: white;
         <figure>
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Colossos_Heide_Park_Soltau_Germany.jpg">
         </figure>
-        <div class="contenido-card" id="card1">
+        <div class="contenido-card">
             <h3>MONTAÑA RUSA</h3>
         </div>
     </div>
@@ -154,25 +165,45 @@ color: white;
     <option value="08:00">08:00 AM</option>
     <option value="08:10">08:10 AM</option>
     <option value="08:20">08:20 AM</option>
+    <option value="08:00">08:30 AM</option>
+    <option value="08:10">08:40 AM</option>
+    <option value="08:20">08:50 AM</option>
+    <option value="08:00">09:00 AM</option>
+    <option value="08:10">09:10 AM</option>
+    <option value="08:20">09:20 AM</option>
     <!-- Agrega más opciones según tus necesidades -->
   </select>
 
   <label for="asientos">Número de asientos de adulto:</label>
   <select id="asientos" name="asientos">
+    <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
     <!-- Agrega más opciones según tus necesidades -->
   </select>
-  <label for="asientos">Número de asientos de adulto:</label>
-  <select id="asientos" name="asientos">
+  <label for="asientos">Número de asientos de niño:</label>
+  <select id="asientoskid" name="asientos">
+    <option value="0">0</option>
     <option value="1">1</option>
     <option value="2">2</option>
     <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
   </select>
-  <button>Confirmar</button>
+  <button onclick="mostrarReserva()">Confirmar</button>
   <button onclick="cancelar()">Cancelar</button>
   </section>
+  <table id="tablaReservas" border="1">
+    <tr>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th>Asientos de adulto</th>
+      <th>Asientos de niño</th>
+    </tr>
+  </table>
 <script>
 function mostrarMenu(){
   document.getElementById("miSeccion");
@@ -182,6 +213,7 @@ function mostrarMenu(){
   else{
     miSeccion.style.display="block";
   }
+  miSeccion.scrollIntoView({ behavior: "smooth" });
 }
 function cancelar(){
   document.getElementById("muSeccion")
@@ -195,8 +227,40 @@ function cambioCarta(){
   inputfecha.type="date";
   card1.parentNode.replaceChild(inputfecha, card1);
 }
-
-
+document.getElementById("reservaForm").addEventListener("submit", function(event) {
+              event.preventDefault(); // Evitar que se recargue la página
+              // Obtener los valores de los campos del formulario
+              var fecha = document.getElementById("fecha").value;
+              var hora = document.getElementById("hora").value;
+              var asientosAdulto = document.getElementById("asientos").value;
+              var asientosNiño = document.getElementById("asientoskid").value;
+              // Agregar los valores a la tabla
+              var tabla = document.getElementById("tablaReservas");
+              var fila = tabla.insertRow(-1); // Insertar una nueva fila al final
+              var celdareserva= fila.insertCell(0);
+              celdareserva.innerHTML = fecha;
+              var celdafecha= fila.insertCell(1);
+              celdafecha.innerHTML = hora;
+              var celdaatraccion = fila.insertCell(2);
+              celdaatraccion.innerHTML = asientosAdulto;
+              var celdacantidad= fila.insertCell(3);
+              celdacantidad.innerHTML = asientosNiño;
+              // Limpiar los campos del formulario
+              document.getElementById("fecha").value = "";
+              document.getElementById("hora").value = "";
+              document.getElementById("asientosAdulto").value = "";
+              document.getElementById("asientosNiño").value = "";
+            });
+   function mostrarReserva(){
+  document.getElementById("tablaReservas");
+  if (tablaReservas.style.display == "none"){
+    tablaReservas.style.display= "block";
+  }
+  else{
+    tablaReservas.style.display="block";
+  }
+  tablaReservas.scrollIntoView({ behavior: "smooth" });
+}
 </script>
 </body>
 </html>
