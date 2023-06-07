@@ -422,6 +422,9 @@ h2{
       <th>Asientos de niño</th>
     </tr>
   </table>
+  <button onclick="refreshPage()">Reiniciar proceso de reserva</button>
+
+  
 <script>
 // function mostrarMenu(){
 //   document.getElementById("miSeccion");
@@ -777,6 +780,10 @@ function agregarFila_6() {
   // Restablece más valores de campos de entrada según tus necesidades
   tabla.scrollIntoView({ behavior: "smooth" });
 }
+function refreshPage() {
+  location.reload();
+}
+
 
 </script>
 </body>
