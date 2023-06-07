@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+        <!--Crear logo-->
+        <img src="img/Logo.gif" alt="" width="189" height="75">
+        <!--Para el menú debemos hacer un input checkbox-->
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            <!--El &#8811 es para el icono de hamburguesa para el menú-->
+            &#8801
+        </label>
+        <!--Creamos la etiqueta NAV para la navegación de la barra de menú-->
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Blog</a>
+            <a href="tickets.html">tickets</a>
+            <a href="contacto.html">Contactos</a>
+            <label for="check" class="esconder-menu">
+                <!--El &#8811 es para el icono de hamburguesa para el menú-->
+                &#215
+            </label>
+        </nav>
+    </header>
+
+       <div class="container-card">
+       <div id="cell-1" class="card" title="1" value="1" >  <!-- onclick="mostrarMenu(this)" -->
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Colossos_Heide_Park_Soltau_Germany.jpg"
+          />
+        </figure>
+        <div class="contenido-card">
+          <h3>MONTAÑA RUSA</h3>
+          <button onclick="onClickcard1(this)">Asientos de adulto:</button>
+          <button onclick="onClickcard2(this)">Asientos de niño:</button>
+          <p>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" value="2023-06-10" min="2023-05-01" max="2023-07-30">>
+            <label for="hora">Hora:</label>
+            <select id="hora" name="hora">
+              <option value="08:00">08:00 AM</option>
+              <option value="08:10">08:10 AM</option>
+              <option value="08:20">08:20 AM</option>
+              <option value="09:00">08:30 AM</option>
+              <option value="09:10">08:40 AM</option>
+              <option value="09:20">08:50 AM</option>
+              <option value="10:00">09:00 AM</option>
+              <option value="10:10">09:10 AM</option>
+              <option value="10:20">09:20 AM</option>
+              <!-- Agrega más opciones según tus necesidades -->
+            </select>
+            <button onclick="onClickconfirmar(this)">Confirmar</button>
+          </p>
+
+        </div>
+                        
+      </div>
+
+      <div id="cell-2" class="card" onclick="mostrarMenu(this)" value="2">
+        <figure>
+          <img
+            src="https://estaticos-cdn.prensaiberica.es/clip/f8df2ea7-a581-4ca6-a665-27debbb3bffb_source-aspect-ratio_default_0.jpg"
+          />
+        </figure>
+        <div class="contenido-card">
+          <h3>SUPER LOOPING</h3>
+        </div>
+      </div>
+      <div id="cell-3" class="card" onclick="mostrarMenu()" value="3">
+        <figure>
+          <img
+            src="https://www.parquedeatracciones.es/content/dam/pam/images/attractions/la-lanzadera/Lanzadera-Atraccion-Parque-de-Atracciones-de-Madrid-3.jpg"
+          />
+        </figure>
+        <div class="contenido-card">
+          <h3>LANZADERA</h3>
+        </div>
+      </div>
+      <div id="cell-4" class="card" onclick="mostrarMenu()" value="4">
+        <figure>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Noria_Monumental_por_la_noche_en_Valencia_%281_de_agosto_de_2021%29.jpg"
+          />
+        </figure>
+        <div class="contenido-card">
+          <h3>NORIA</h3>
+        </div>
+      </div>
+      <div id="cell-5" class="card" onclick="mostrarMenu()" value="5">
+        <figure>
+          <img
+            src="https://s3.ppllstatics.com/elcorreo/www/multimedia/201911/16/media/cortadas/critica16-kNsF-U907116730668BH-1248x770@El%20Correo.jpg"
+          />
+        </figure>
+        <div class="contenido-card">
+          <h3>CASA DEL TERROR</h3>
+        </div>
+      </div>
+      <div id="cell-6" class="card" onclick="mostrarMenu()" value="6">
+        <figure>
+          <img
+            src="https://as01.epimg.net/epik/imagenes/2016/07/01/portada/1467328438_120488_1467734322_noticia_normal.jpg"
+          />
+        </figure>
+        <div class="contenido-card">
+          <h3>COCHES DE CHOQUE</h3>
+        </div>
+      </div>
+    </div>
+    <!--<section id="miSeccion">
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha" name="fecha">
+    
+      <label for="hora">Hora:</label>
+      <select id="hora" name="hora">
+        <option value="08:00">08:00 AM</option>
+        <option value="08:10">08:10 AM</option>
+        <option value="08:20">08:20 AM</option>
+        <option value="08:00">08:30 AM</option>
+        <option value="08:10">08:40 AM</option>
+        <option value="08:20">08:50 AM</option>
+        <option value="08:00">09:00 AM</option>
+        <option value="08:10">09:10 AM</option>
+        <option value="08:20">09:20 AM</option>
+        Agrega más opciones según tus necesidades
+      </select>-->
+    
+      <!-- <label for="asientos">Número de asientos de adulto:</label>
+      <select id="asientos" name="asientos">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        Agrega más opciones según tus necesidades
+      </select> -->
+      <!-- <label for="asientos">Número de asientos de niño:</label>
+      <select id="asientoskid" name="asientos">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option> -->
+      <!-- </select>
+      <button onclick="mostrarReserva()">Confirmar</button>
+      <button onclick="cancelar()">Cancelar</button>
+      </section> -->
+        <table id="myTable" border="1">
+          <thead>
+            <tr>
+              <th>Заголовок 1</th>
+              <th>Заголовок 2</th>
+              <th>Заголовок 3</th>
+              <th>Заголовок 4</th>
+              <th>Заголовок 5</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ячейка 1, строка 1</td>
+              <td>Ячейка 2, строка 1</td>
+              <td>Ячейка 3, строка 1</td>
+              <td>Ячейка 4, строка 1</td>
+              <td>Ячейка 5, строка 1</td>
+            </tr>
+            <tr>
+              <td>Ячейка 1, строка 2</td>
+              <td>Ячейка 2, строка 2</td>
+              <td>Ячейка 3, строка 2</td>
+              <td>Ячейка 4, строка 2</td>
+              <td>Ячейка 5, строка 2</td>
+            </tr>
+            <tr>
+              <td>Ячейка 1, строка 3</td>
+              <td>Ячейка 2, строка 3</td>
+              <td>Ячейка 3, строка 3</td>
+              <td>Ячейка 4, строка 3</td>
+              <td>Ячейка 5, строка 3</td>
+            </tr>
+            <!-- ... Добавьте еще нужное количество строк в тело таблицы ... -->
+          </tbody>
+        </table>
+      <div id="footer">
+
+        <div class="letrasFooter">
+            <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
+        </div>
+        <div class="colum">
+            <a class="youtube" href="http://youtube.com"></a>
+        </div>
+
+        <div class="colum">
+            <a class="instagram" href="http://instagram.com"></a>
+        </div>
+
+        <div class="colum">
+            <a class="facebook" href="http://facebook.com"></a>
+        </div>
+
+        <div class="letrasFooter">
+            <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="./JS.js"></script>
+  </body>
+</html>
