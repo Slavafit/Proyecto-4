@@ -1,12 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrador de reservas</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+  <header>
+    <h1>BIENVENIDO A RASCAPIQUILANDIA</h1>
+  </header>
+  <div class="container-card">
+    <div class="card">
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Colossos_Heide_Park_Soltau_Germany.jpg">
+      </figure>
+      <div id="card1" class="contenido-card">
+        <h3>MONTAÑA RUSA</h3>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha">
+        <br>
+        <label for="hora">Hora:</label>
+        <select id="hora" name="hora">
+          <option value="08:00">08:00 AM</option>
+          <option value="08:10">08:10 AM</option>
+          <option value="08:20">08:20 AM</option>
+          <option value="08:00">08:30 AM</option>
+          <option value="08:10">08:40 AM</option>
+          <option value="08:20">08:50 AM</option>
+          <option value="08:00">09:00 AM</option>
+          <option value="08:10">09:10 AM</option>
+          <option value="08:20">09:20 AM</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de adulto:</label>
+        <select id="asientos" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de niño:</label>
+        <select id="asientoskid" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br>
+        <button id="book" onclick="agregarFila_1()">Reservar</button>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img
+          src="https://estaticos-cdn.prensaiberica.es/clip/f8df2ea7-a581-4ca6-a665-27debbb3bffb_source-aspect-ratio_default_0.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>SUPER LOOPING</h3>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha2" name="fecha">
+        <br>
+        <label for="hora">Hora:</label>
+        <select id="hora2" name="hora">
+          <option value="08:00">08:00 AM</option>
+          <option value="08:10">08:10 AM</option>
+          <option value="08:20">08:20 AM</option>
+          <option value="08:00">08:30 AM</option>
+          <option value="08:10">08:40 AM</option>
+          <option value="08:20">08:50 AM</option>
+          <option value="08:00">09:00 AM</option>
+          <option value="08:10">09:10 AM</option>
+          <option value="08:20">09:20 AM</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de adulto:</label>
+        <select id="asientos2" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de niño:</label>
+        <select id="asientoskid2" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br>
+        <button id="book" onclick="agregarFila_2()">Reservar</button>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img
+          src="https://www.parquedeatracciones.es/content/dam/pam/images/attractions/la-lanzadera/Lanzadera-Atraccion-Parque-de-Atracciones-de-Madrid-3.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>LANZADERA</h3>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha3" name="fecha">
+        <br>
+        <label for="hora">Hora:</label>
+        <select id="hora3" name="hora">
+          <option value="08:00">08:00 AM</option>
+          <option value="08:10">08:10 AM</option>
+          <option value="08:20">08:20 AM</option>
+          <option value="08:00">08:30 AM</option>
+          <option value="08:10">08:40 AM</option>
+          <option value="08:20">08:50 AM</option>
+          <option value="08:00">09:00 AM</option>
+          <option value="08:10">09:10 AM</option>
+          <option value="08:20">09:20 AM</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de adulto:</label>
+        <select id="asientos3" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de niño:</label>
+        <select id="asientoskid3" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br>
+        <button id="book" onclick="agregarFila_3()">Reservar</button>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Noria_Monumental_por_la_noche_en_Valencia_%281_de_agosto_de_2021%29.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>NORIA</h3>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha4" name="fecha">
+        <br>
+        <label for="hora">Hora:</label>
+        <select id="hora4" name="hora">
+          <option value="08:00">08:00 AM</option>
+          <option value="08:10">08:10 AM</option>
+          <option value="08:20">08:20 AM</option>
+          <option value="08:00">08:30 AM</option>
+          <option value="08:10">08:40 AM</option>
+          <option value="08:20">08:50 AM</option>
+          <option value="08:00">09:00 AM</option>
+          <option value="08:10">09:10 AM</option>
+          <option value="08:20">09:20 AM</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de adulto:</label>
+        <select id="asientos4" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de niño:</label>
+        <select id="asientoskid4" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br>
+        <button id="book" onclick="agregarFila_4()">Reservar</button>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img
+          src="https://s3.ppllstatics.com/elcorreo/www/multimedia/201911/16/media/cortadas/critica16-kNsF-U907116730668BH-1248x770@El%20Correo.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>CASA DEL TERROR</h3>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha5" name="fecha">
+        <br>
+        <label for="hora">Hora:</label>
+        <select id="hora5" name="hora">
+          <option value="08:00">08:00 AM</option>
+          <option value="08:10">08:10 AM</option>
+          <option value="08:20">08:20 AM</option>
+          <option value="08:00">08:30 AM</option>
+          <option value="08:10">08:40 AM</option>
+          <option value="08:20">08:50 AM</option>
+          <option value="08:00">09:00 AM</option>
+          <option value="08:10">09:10 AM</option>
+          <option value="08:20">09:20 AM</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de adulto:</label>
+        <select id="asientos5" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de niño:</label>
+        <select id="asientoskid5" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br>
+        <button id="book" onclick="agregarFila_5()">Reservar</button>
+      </div>
+    </div>
+    <div class="card">
+      <figure>
+        <img
+          src="https://as01.epimg.net/epik/imagenes/2016/07/01/portada/1467328438_120488_1467734322_noticia_normal.jpg">
+      </figure>
+      <div class="contenido-card">
+        <h3>COCHES DE CHOQUE</h3>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha6" name="fecha">
+        <br>
+        <label for="hora">Hora:</label>
+        <select id="hora6" name="hora">
+          <option value="08:00">08:00 AM</option>
+          <option value="08:10">08:10 AM</option>
+          <option value="08:20">08:20 AM</option>
+          <option value="08:00">08:30 AM</option>
+          <option value="08:10">08:40 AM</option>
+          <option value="08:20">08:50 AM</option>
+          <option value="08:00">09:00 AM</option>
+          <option value="08:10">09:10 AM</option>
+          <option value="08:20">09:20 AM</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de adulto:</label>
+        <select id="asientos6" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <!-- Agrega más opciones según tus necesidades -->
+        </select>
+        <br>
+        <label for="asientos">Número de asientos de niño:</label>
+        <select id="asientoskid6" name="asientos">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <br>
+        <button id="book" onclick="agregarFila_6()">Reservar</button>
+      </div>
+    </div>
+  </div>
+  </section>
+  <div id="bookingOk">
+  <h2 id="confirmed">¡Reserva confirmada!</h2>
+  <table id="tablaReservas">
+    <tr>
+      <th>Atracción</th>
+      <th>Fecha</th>
+      <th>Hora</th>
+      <th>Asientos de adulto</th>
+      <th>Asientos de niño</th>
+    </tr>
+  </table>
+</div>
+  <button id="reset" onclick="refreshPage()">Reiniciar proceso de reserva</button>
+
+<script src="index.js"></script>
 </body>
+
 </html>
