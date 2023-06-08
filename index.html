@@ -11,8 +11,27 @@
 
 <body>
   <header>
-    <h1>BIENVENIDO A RASCAPIQUILANDIA</h1>
-  </header>
+    <!--Crear logo-->
+    <img src="img/Logo.gif" alt="" width="189" height="75">
+    <!--Para el menú debemos hacer un input checkbox-->
+    <input type="checkbox" id="check">
+    <label for="check" class="mostrar-menu">
+        <!--El &#8811 es para el icono de hamburguesa para el menú-->
+        &#8801
+    </label>
+    <!--Creamos la etiqueta NAV para la navegación de la barra de menú-->
+    <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#">Sobre nosotros</a>
+        <a href="#">Blog</a>
+        <a href="tickets.html">tickets</a>
+        <a href="contacto.html">Contactos</a>
+        <label for="check" class="esconder-menu">
+            <!--El &#8811 es para el icono de hamburguesa para el menú-->
+            &#215
+        </label>
+    </nav>
+</header>
   <div class="container-card">
     <div class="card">
       <figure>
@@ -316,7 +335,28 @@
   </table>
 </div>
   <button id="reset" onclick="refreshPage()">Reiniciar proceso de reserva</button>
+  <div id="footer">
 
+    <div class="letrasFooter">
+        <a href="#" style="color: black;margin-top: 30px;">Created by "Super-Group"</a>
+    </div>
+    <div class="colum">
+        <a class="youtube" href="http://youtube.com"></a>
+    </div>
+
+    <div class="colum">
+        <a class="instagram" href="http://instagram.com"></a>
+    </div>
+
+    <div class="colum">
+        <a class="facebook" href="http://facebook.com"></a>
+    </div>
+
+    <div class="letrasFooter">
+        <a href="#" style="color: black;margin-top: 20px;">Politica de privacidad</a>
+    </div>
+
+</div>
 <script src="index.js"></script>
 </body>
 
