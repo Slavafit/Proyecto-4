@@ -1,3 +1,5 @@
+<p align="center"> <img width="600" height="200" src="https://github.com/Slavafit/Proyecto-4/commit/e9bdece3f41c7c3343722301de33922b3486f3ee#diff-f4833fcfea7a8daade08d4d4e6fed508e5b8fbc5f306ff4c0698ece84bb4ed8b"> </p>
+
 <h1> 🎢🎡🎪🎢🎡🎪 Reserva de atracciones 🎢🎡🎪🎢🎡🎪 </h1> 
 
 ## Proyecto 🧑‍💻💻
