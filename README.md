@@ -1,3 +1,5 @@
+<p align="center"> <img width="600" height="200" src="https://github.com/Slavafit/Proyecto-4/commit/e9bdece3f41c7c3343722301de33922b3486f3ee#diff-f4833fcfea7a8daade08d4d4e6fed508e5b8fbc5f306ff4c0698ece84bb4ed8b"> </p>
+
 <h1> 🎢🎡🎪🎢🎡🎪 Reserva de atracciones 🎢🎡🎪🎢🎡🎪 </h1> 
 
 ## Proyecto 🧑‍💻💻
@@ -6,19 +8,11 @@ Esta es una propuesta de formulario para reservas que formara parte de la pagina
 Fantastic World, el formulario permite al cliente que ya tiene una entrada al parque, reservar el uso de las atracciones que desee usar
 y asi evitar hacer filas.
 ## Diseño
-El formulario esta diseñado para que sea usado de forma muy intuitiva, la vista general muestra al cliente las diferentes atracciones que el parque tiene, desde cada imagen se puede hacer el registro, seleccionando la cantidad de entradas de adultos y niños, fecha y hora y hacer la reserva, a medida que el cliente vaya reservando la atracción quedara  
+El formulario esta diseñado para que sea usado de forma muy intuitiva, la vista general muestra al cliente las diferentes atracciones que el parque tiene, desde cada imagen se puede hacer el registro, seleccionando la cantidad de entradas de adultos y niños, fecha y hora y hacer la reserva, a medida que el cliente vaya reservando la atracción quedara.
 
-## Herramientas y Lenguajes 🔧✂️📚
-<ul>
-<li> Trello </li>
-<li> Figma </li>
-<li> Visual Studio Code</li> 
-<li> GitHub</li>
-<li> Slack</li>
-<li> HTML</li>
-<li> CCS</li>
-<li> JAVASCRIPT </li>
-</ul>
+## Herramientas y Lenguajes 🔧✂️📚     
+
+<br> ![image](https://github.com/Slavafit/Proyecto-4/assets/132651253/4f83704d-51be-4743-a374-af58c0f3569f) ![image](https://github.com/Slavafit/Proyecto-4/assets/132651253/12ab040e-81ec-4771-ace2-22e0dfe00108) ![image](https://github.com/Slavafit/Proyecto-4/assets/132651253/c90a7553-00fe-4377-9146-58c883b17646) ![image](https://github.com/Slavafit/Proyecto-4/assets/132651253/95d33127-6520-40ca-b402-c8eb96e029ab) ![image](https://github.com/Slavafit/Proyecto-4/assets/132651253/bbdd2eed-dfe8-43cf-81bc-4dcd0ef627b2)  ![image](https://github.com/Slavafit/Proyecto-4/assets/132651253/6022e3f3-653e-4709-9b46-47e7c42959cf) ![image](https://github.com/Slavafit/Proyecto-4/assets/132651253/5ee4bf47-6e84-4c5c-86cd-5333b08096ea)
 
 ## Instalacion⚙️⚙️
 <ul>
