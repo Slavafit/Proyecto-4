@@ -6,7 +6,8 @@ Esta es una propuesta de formulario para reservas que formara parte de la pagina
 Fantastic World, el formulario permite al cliente que ya tiene una entrada al parque, reservar el uso de las atracciones que desee usar
 y asi evitar hacer filas.
 ## Diseño
-El formulario esta diseñado para que sea usado de forma muy intuitiva, la vista general muestra al cliente las diferentes atracciones que el parque tiene, desde cada imagen se puede hacer el registro, seleccionando la cantidad de entradas de adultos y niños, fecha y hora y hacer la reserva, a medida que el cliente vaya reservando la atracción quedara  
+El formulario esta diseñado para que sea usado de forma muy intuitiva, la vista general muestra al cliente las diferentes atracciones que el parque tiene, desde cada imagen se puede hacer el registro, seleccionando la cantidad de entradas de adultos y niños, fecha y hora y hacer la reserva, a medida que el cliente vaya reservando la atracción quedara registrada en una tabla, desde donde se podra verificar los datos seleccionados, además de eliminar lo no deseado. 
+
 
 ## Herramientas y Lenguajes 🔧✂️📚
 <ul>
